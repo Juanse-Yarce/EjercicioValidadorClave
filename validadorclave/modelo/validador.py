@@ -11,6 +11,10 @@ class ReglaValidacion(ABC):
     def es_valida(self, clave):
         pass
 
+    def _validar_longitud(self, clave):
+        return len(clave) > self._longitud_esperada
+    
     
 
+        
 
