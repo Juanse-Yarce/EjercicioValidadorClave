@@ -39,6 +39,10 @@ class ReglaValidacionCalisto(ReglaValidacion):
     def __init__(self, _longitud_esperada):
         super().__init__(_longitud_esperada)
 
-    
+    def contiene_calisto(self, clave):
+        if clave.lower().count("calisto") == 0 or clave.upper().count("CALISTO") < 2:
+            return False
+   
+
         
 
