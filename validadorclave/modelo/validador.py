@@ -18,7 +18,10 @@ class ReglaValidacion(ABC):
         if not any(c.isupper() for c in clave):
             return False
         
-    
+    def _contiene_minuscula(self, clave):
+        if not any(c.islower() for c in clave):
+            return False
 
+    
         
 
