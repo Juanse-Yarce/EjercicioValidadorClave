@@ -35,7 +35,10 @@ class ReglaValidacionGanimedes(ReglaValidacion):
         if not any(c in cracteres_especiales for c in clave):
             return False
 
+class ReglaValidacionCalisto(ReglaValidacion):
+    def __init__(self, _longitud_esperada):
+        super().__init__(_longitud_esperada)
 
-
+    
         
 
