@@ -26,7 +26,11 @@ class ReglaValidacion(ABC):
         if not any(c.isdigit() for c in clave):
             return False
             
+class ReglaValidacionGanimedes(ReglaValidacion):
+    def __init__(self, _longitud_esperada):
+        super().__init__(_longitud_esperada)
 
+    
 
         
 
