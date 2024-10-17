@@ -30,7 +30,12 @@ class ReglaValidacionGanimedes(ReglaValidacion):
     def __init__(self, _longitud_esperada):
         super().__init__(_longitud_esperada)
 
-    
+    def contiene_caracter_especial(self, clave):
+        cracteres_especiales = "@_#$%"
+        if not any(c in cracteres_especiales for c in clave):
+            return False
+
+
 
         
 
