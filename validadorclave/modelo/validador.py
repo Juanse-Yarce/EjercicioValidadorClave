@@ -22,6 +22,11 @@ class ReglaValidacion(ABC):
         if not any(c.islower() for c in clave):
             return False
 
-    
+    def _contiene_numero(self, clave):
+        if not any(c.isdigit() for c in clave):
+            return False
+            
+
+
         
 
